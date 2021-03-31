@@ -1,0 +1,111 @@
+::placeholder
+    text-align: center
+    
+::-webkit-input-placeholder
+    text-align: center
+
+:-moz-placeholder /* Firefox 18- */
+    text-align: center
+
+::-moz-placeholder  /* Firefox 19+ */
+    text-align: center
+
+:-ms-input-placeholder
+    text-align: center
+
+.imageContainer
+    height: 55vh
+    width: 100vw
+    position: relative
+
+.image
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+.mainText
+    font-size: 40px
+    position: absolute
+    color: white
+    left: 50%
+    bottom: 15%
+    transform: translate(-50%, -15%)
+
+.form
+    position: relative
+    height: 35vh
+    width: 100vw
+
+.form
+    .fullName
+        position: absolute
+        left: 50%
+        top: 0
+        transform: translate(-50%, 0)
+        input
+            width: 700px
+            height: 60px
+            border-radius: 5px
+
+
+.form
+    .email
+        position: absolute
+        left: 50%
+        top: 40%
+        transform: translate(-50%, -40%)
+        input
+            width: 700px
+            height: 60px
+            border-radius: 5px
+
+.form
+    .btn
+        position: absolute
+        left: 50%
+        top: 80%
+        transform: translate(-50%, -70%)
+        border: 5px solid green
+        border-radius: 5px
+        color: green
+        font-family: arial
+
+        input
+            width: 700px
+            height: 60px
+            background-image: linear-gradient(green, green)
+            background-position: 50% 50%
+            background-repeat: no-repeat
+            background-size: 0% 100%
+            transition: background-size .5s, color .5s
+
+.form
+    .btn
+        input:hover
+            transition: background-size .5s, color .5s
+            background-size: 100% 100%
+            color: #fff
+            
+
+.footer
+    position: relative
+    width: 100vw
+    height: 10vh
+    p
+        position: absolute
+        color: #fff
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+input
+    text-align: center
+
+
+svg:hover
+    width: 300px
+    height: 300px
+
+.cls-1:hover
+    fill: grey 
