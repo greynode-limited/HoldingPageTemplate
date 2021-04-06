@@ -23,6 +23,10 @@ function MyApp({ Component, pageProps }) {
             <meta property="og:url" content="https://greynode.co.uk"></meta>
             <meta property="og:site_name" content="Greynode Limited"></meta>
             <link rel="stylesheet" href="https://use.typekit.net/diu0dbf.css" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png"></link>
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png"></link>
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png"></link>
+            <link rel="manifest" href="/site.webmanifest"></link>
           </Head>
           <Component {...pageProps} />
          </>
