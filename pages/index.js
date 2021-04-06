@@ -1,45 +1,81 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function HoldingPageTemplate() {
-    return (
-        <>
-            <Head>
-                <title>Greynode Holding Page</title>
-            </Head>
-            <main>
-                <section className="imageContainer">
-                    <div className="image">
-                        <svg className="logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 82" width="250px" height="250px">
-                            <path className="cls-1" d="M1.86,34.29c0-18.12,13.91-32.72,33.5-32.72A34.25,34.25,0,0,1,57.89,9.7L49.37,19a19.3,19.3,0,0,0-13.72-5c-11.07,0-19.49,9-19.49,20.28s8.23,20.38,19.49,20.38a20.1,20.1,0,0,0,14.6-6.37V39H39.47V29H62.79V53.69C57.21,62,46.92,67.11,35.46,67.11,15.87,67.11,1.86,52.51,1.86,34.29Z" fill="#fff"/>
-                            <path className="cls-1" d="M73.49,17.05H86.42v9.4c1.37-4,6.37-10.38,17.14-10.38v14.3c-11.36,0-17,5.19-17,16.85V66H73.49Z" fill="#fff"/>
-                            <path className="cls-1" d="M107.35,41.54a25.15,25.15,0,0,1,25.37-25.47c13.32,0,23.81,11.36,23.81,25.27a42.54,42.54,0,0,1-.3,4.7H120.67c1.57,6.76,7.15,10,13.62,10a24.28,24.28,0,0,0,13.22-3.82l4.9,9.4A32.93,32.93,0,0,1,134.19,67C119.89,67,107.35,57.7,107.35,41.54Zm36.83-4.21A11.83,11.83,0,0,0,132.33,27c-5.68,0-10.58,4.12-11.85,10.29Z" fill="#fff"/>
-                            <path className="cls-1" d="M165.82,68.48c6.08,0,8.33-2.06,10.09-5.88L177,60.45l-20.47-43.4h13.32L179.73,40C181.2,43.4,183,48.3,183,48.3s2.05-5.78,3.13-8.62L195,17.05h13.12L186.39,67.4c-5.28,12-14.49,13-20.57,13Z" fill="#fff"/>
-                        </svg>
-                    </div>
-                    <div className="mainText">
-                        <h4>Website Coming Soon</h4>
-                    </div>
-                </section>
-                <section className="form">
-                   <form>
-                       <div className="fullName">
-                            <input type="text" name="fullname" placeholder="Full Name"></input>
-                       </div>
-                       <div className="email">
-                            <input type="email" name="email" placeholder="Email Address"></input>
-                       </div>
-                       <div className="btn">
-                            <input type="submit" value="SUBSCRIBE TO UPDATES"></input>
-                       </div>
-                   </form>
-                </section>
-            </main>
-            <footer className="footer">
-                <div>
-                    <p>© 2021 GREYNODE LIMITED ALL RIGHTS RESERVED</p>
-                </div>
-            </footer>
-        </>
-    )
+  return (
+    <>
+      <Head>
+        <title>Greynode Holding Page</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
+        <meta property="og:title" content="Greynode Holding Page"></meta>
+        <meta
+          property="og:description"
+          content="A holding page that is seen whilst the website is being created."
+        ></meta>
+        <meta
+          property="og:image"
+          content="http://euro-travel-example.com/thumbnail.jpg"
+        ></meta>
+        <meta property="og:url" content="https://greynode.co.uk"></meta>
+        <meta property="og:site_name" content="Greynode Limited"></meta>
+      </Head>
+      <main>
+        <section className="imageContainer">
+          <div className="image">
+            <svg
+              id="Layer_1"
+              className="logo"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 106 118"
+            >
+              <path
+                class="cls-1"
+                d="M66.3,29.39c-9.14-.48-18.59,9.09-17.85,18.41a2.86,2.86,0,0,0,3.08,2.62c6.65-.57,15-12.05,16.54-18.68A1.91,1.91,0,0,0,66.3,29.39Z"
+              />
+              <path
+                class="cls-1"
+                d="M36.87,82.72a4.38,4.38,0,0,0,0,3.82c.4.8,1,1.38,1.79,1.15,5.16-.13,9.78-8.42,10.88-11.89C43.76,76.16,39.18,77.82,36.87,82.72Z"
+              />
+              <path
+                class="cls-1"
+                d="M76.79,4.77C53-5.67,23.07,10.15,9.93,40.1s-4.51,62.69,19.28,73.13,53.72-5.38,66.86-35.33S100.58,15.21,76.79,4.77ZM73.7,77.64a4.9,4.9,0,0,1,1.94,4.6c-1,6.54-13-5.24-17.41-5.59-16.79,35.62-40.32,10.9-21.3-4.24,3.32-2.85,11.19-4.24,16-4.55,2.44-3,3.16-7.83,4.78-11.27a1.15,1.15,0,0,0-.54-.69c-19.13,9.47-19.37-16-8.87-25.54,5.41-5.66,14.91-9.73,22.21-7.16a8,8,0,0,1,5.2,6.46c1.36,9.26-3.91,9.2-7.89,19.06-3,7.63-4.11,13-7.64,21.07C63.75,70.34,70.39,75.12,73.7,77.64Z"
+              />
+            </svg>
+          </div>
+          <div className="mainText">
+            <h4>Website Coming Soon</h4>
+          </div>
+        </section>
+        <section className="form">
+          <form>
+            <div className="fullName">
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Full Name"
+              ></input>
+            </div>
+            <div className="email">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+              ></input>
+            </div>
+            <div className="btn">
+              <input type="submit" value="SUBSCRIBE TO UPDATES"></input>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer className="footer">
+        <div>
+          <p>© 2021 GREYNODE LIMITED ALL RIGHTS RESERVED</p>
+        </div>
+      </footer>
+    </>
+  );
 }
-

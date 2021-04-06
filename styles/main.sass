@@ -1,6 +1,6 @@
 ::placeholder
     text-align: center
-    
+
 ::-webkit-input-placeholder
     text-align: center
 
@@ -48,7 +48,6 @@
             height: 60px
             border-radius: 5px
 
-
 .form
     .email
         position: absolute
@@ -86,7 +85,6 @@
             transition: background-size .5s, color .5s
             background-size: 100% 100%
             color: #fff
-            
 
 .footer
     position: relative
@@ -102,10 +100,83 @@
 input
     text-align: center
 
+@media (min-width: 768px)
+    .logo:hover
+        width: 300px
+        height: 300px
+        .cls-1
+            fill: grey
 
-svg:hover
-    width: 300px
-    height: 300px
+@media (max-width: 768px)
+    .imageContainer
+        height: 50vh
+        width: 100vw
+        position: relative
 
-.cls-1:hover
-    fill: grey 
+    .image
+        position: absolute
+        width: 250px
+        height: 250px
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+    .mainText
+        width: 260px
+
+    .mainText h4
+        font-size: 25px
+        color: #fff
+        text-align: center
+        
+    .form
+        position: relative
+        height: 40vh
+        width: 100vw
+
+    .form
+        .fullName
+            position: absolute
+            left: 50%
+            top: 0
+            transform: translate(-50%, 0)
+            input
+                width: 80vw
+                height: 3.5rem
+                border-radius: 0.4rem
+
+    .form
+        .email
+            position: absolute
+            left: 50%
+            top: 40%
+            transform: translate(-50%, -40%)
+            input
+                width: 80vw
+                height: 3.5rem
+                border-radius: 0.4rem
+
+    .form
+        .btn
+            position: absolute
+            left: 50%
+            top: 85%
+            transform: translate(-50%, -85%)
+            border-radius: 5px
+
+            input
+                width: 80vw
+                height: 3.5rem
+                background-color: green
+                color: #fff
+
+.footer
+    position: relative
+    width: 100vw
+    height: 10vh
+    p
+        width: 260px
+        position: absolute
+        font-size: 10px
+        color: #fff
+        text-align: center
