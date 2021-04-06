@@ -1,182 +1,88 @@
-::placeholder
-    text-align: center
+main
+  padding: 2em
+  width: 100%
+  overflow-x: hidden
+  position: relative
+  min-height: 90vh
 
-::-webkit-input-placeholder
-    text-align: center
+:focus
+  outline: unset
 
-:-moz-placeholder /* Firefox 18- */
-    text-align: center
-
-::-moz-placeholder  /* Firefox 19+ */
-    text-align: center
-
+::placeholder,
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
 :-ms-input-placeholder
-    text-align: center
+  text-align: center
 
-.imageContainer
-    height: 55vh
-    width: 100vw
-    position: relative
+.logoContainer
+  width: 100%
+  position: relative
+  margin-top: 2em
 
-.image
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
-
-.mainText
-    font-size: 40px
-    position: absolute
-    color: white
-    left: 50%
-    bottom: 15%
-    transform: translate(-50%, -15%)
+.title
+  font-size: 40px
+  color: white
+  text-align: center
+  margin: 1em
 
 .form
-    position: relative
-    height: 35vh
-    width: 100vw
-
-.form
-    .fullName
-        position: absolute
-        left: 50%
-        top: 0
-        transform: translate(-50%, 0)
-        input
-            width: 700px
-            height: 60px
-            border-radius: 5px
-
-.form
-    .email
-        position: absolute
-        left: 50%
-        top: 40%
-        transform: translate(-50%, -40%)
-        input
-            width: 700px
-            height: 60px
-            border-radius: 5px
-
-.form
-    .btn
-        position: absolute
-        left: 50%
-        top: 80%
-        transform: translate(-50%, -70%)
-        border: 5px solid green
-        border-radius: 5px
-        color: green
-        font-family: arial
-
-        input
-            width: 700px
-            height: 60px
-            background-image: linear-gradient(green, green)
-            background-position: 50% 50%
-            background-repeat: no-repeat
-            background-size: 0% 100%
-            transition: background-size .5s, color .5s
-
-.form
-    .btn
-        input:hover
-            transition: background-size .5s, color .5s
-            background-size: 100% 100%
-            color: #fff
+  height: 35vh
+  width: 100%
+  input
+    display: block
+    width: min(100%, 700px)
+    height: 60px
+    margin: .5em auto
+    border-radius: 5px
+    color: green
+    font-family: arial
+    &:hover,
+    &:active
+      border: 5px solid green
+    &:focus
+      border: 5px solid transparentize(green, .25)
+    &:last-child
+      border: 5px solid green
+      background-image: linear-gradient(green, green)
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: 0% 100%
+      transition: background-size .5s, color .5s
+      &:hover
+        transition: background-size .5s, color .5s
+        background-size: 100% 100%
+        color: #fff
 
 .footer
-    position: relative
-    width: 100vw
-    height: 10vh
-    p
-        position: absolute
-        color: #fff
-        left: 50%
-        top: 50%
-        transform: translate(-50%, -50%)
+  position: relative
+  width: 100%
+  bottom: 0
+  p
+    width: 100%
+    font-size: 10px
+    color: #fff
+    text-align: center
 
 input
-    text-align: center
+  text-align: center
+.logo
+  width: min(100%, 10em)
+  margin: 0 auto
+  .cls-1
+    fill: white
+  &:hover
+    transform: scale(1.375)
+    .cls-1
+      fill: grey
 
-@media (min-width: 768px)
-    .logo:hover
-        width: 300px
-        height: 300px
-        .cls-1
-            fill: grey
+@media (max-width: 48em)
+  .logoContainer
+    margin-top: 0
 
-@media (max-width: 768px)
-    .imageContainer
-        height: 50vh
-        width: 100vw
-        position: relative
-
-    .image
-        position: absolute
-        width: 250px
-        height: 250px
-        left: 50%
-        top: 50%
-        transform: translate(-50%, -50%)
-
-    .mainText
-        width: 260px
-
-    .mainText h4
-        font-size: 25px
-        color: #fff
-        text-align: center
-        
-    .form
-        position: relative
-        height: 40vh
-        width: 100vw
-
-    .form
-        .fullName
-            position: absolute
-            left: 50%
-            top: 0
-            transform: translate(-50%, 0)
-            input
-                width: 80vw
-                height: 3.5rem
-                border-radius: 0.4rem
-
-    .form
-        .email
-            position: absolute
-            left: 50%
-            top: 40%
-            transform: translate(-50%, -40%)
-            input
-                width: 80vw
-                height: 3.5rem
-                border-radius: 0.4rem
-
-    .form
-        .btn
-            position: absolute
-            left: 50%
-            top: 85%
-            transform: translate(-50%, -85%)
-            border-radius: 5px
-
-            input
-                width: 80vw
-                height: 3.5rem
-                background-color: green
-                color: #fff
-
-.footer
-    position: relative
-    width: 100vw
-    height: 10vh
-    p
-        width: 260px
-        position: absolute
-        font-size: 10px
-        color: #fff
-        text-align: center
+  .mainText
+    width: 260px
+    h4
+      font-size: 25px
+      color: #fff
+      text-align: center
