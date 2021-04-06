@@ -1,3 +1,5 @@
+$highlight: green
+
 main
   padding: 2em
   width: 100%
@@ -34,17 +36,16 @@ main
     width: min(100%, 700px)
     height: 60px
     margin: .5em auto
-    border-radius: 5px
-    color: green
+    color: $highlight
     font-family: arial
     &:hover,
     &:active
-      border: 5px solid green
+      border: 5px solid $highlight
     &:focus
-      border: 5px solid transparentize(green, .25)
+      border: 5px solid transparentize($highlight, .25)
     &:last-child
-      border: 5px solid green
-      background-image: linear-gradient(green, green)
+      border: 5px solid $highlight
+      background-image: linear-gradient($highlight, $highlight)
       background-position: 50% 50%
       background-repeat: no-repeat
       background-size: 0% 100%
@@ -58,6 +59,7 @@ main
   position: relative
   width: 100%
   bottom: 0
+  margin-bottom: 2em
   p
     width: 100%
     font-size: 10px
